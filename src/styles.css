@@ -1,0 +1,14 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/749/original/clock1.jpg?1708970161");
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+  color: #ff40e6;
+  font-style: italic;
+  font-weight: 800;
+  padding-top: 80px;
+}
+footer {text-align: center;}
+}
