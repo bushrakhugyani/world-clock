@@ -11,6 +11,7 @@ body {
   box-shadow: 10px 10px 15px rgba(218, 11, 11, 0.945);
 }
 select {
+  border: solid red;
   display: block;
   margin: 0 auto;
   width: 85%;
@@ -31,7 +32,7 @@ h1 {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(239, 33, 33, 0.4);
   width: 400px;
   margin: 20px auto;
 }

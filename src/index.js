@@ -22,7 +22,7 @@ function updateClocks(cityId) {
 
   // Update the date and time in the city element with the current date and time
   dateElement.innerHTML = dateTime.format("MMMM Do YYYY");
-  timeElement.innerHTML = dateTime.format("h:mm:ss A "); //I tried [<small>A</small>] but not working for me IDK y?
+  timeElement.innerHTML = dateTime.format("h:mm:ss A");
 }
 
 function updateAllClocks() {
@@ -37,3 +37,24 @@ updateAllClocks();
 
 // Update the clocks for all cities every second
 setInterval(updateAllClocks, 1000);
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `
+  <div class="city">
+    <div>
+      <h2>${cityName}</h2>
+      <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+    </div>
+    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    "A"
+  )}</small></div>
+  </div>
+  `;
+}
+
+let selectCityElement = document.querySelector("#city");
+selectCityElement.addEventListener("change", updateCity);
