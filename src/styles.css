@@ -6,17 +6,19 @@ body {
   border-radius: 50px;
   max-width: 500px;
   margin: 0 auto;
-  background: white;
+  background: rgb(60, 57, 57);
   padding: 10px;
   box-shadow: 10px 10px 15px rgba(218, 11, 11, 0.945);
 }
 select {
-  border: solid red;
+  border: 1px solid red;
   display: block;
   margin: 0 auto;
   width: 85%;
   border-radius: 5px;
   padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 h1 {
   margin-top: 10px;
@@ -27,20 +29,24 @@ h1 {
   font-weight: 800;
   padding-top: 10px;
 }
+h2 {
+  margin: 10px;
+}
 .city {
+  font-size: 25px;
   background-color: #f5f5f5;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(239, 33, 33, 0.4);
   width: 400px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .date,
 .time {
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 18px;
   color: #333;
 }
 
