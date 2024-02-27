@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
     <link rel="stylesheet" href="src/styles.css" />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+     
   </head>
   <body>
     <div class="container">
@@ -17,20 +20,20 @@
         <option value="islamabad">Islamabad</option>
         <option value="kabul">Kabul</option>
       </select>
-      <div class="city">
-        <h2>Los Angeles</h2>
-        <div class="date">February 26th 2024</div>
-        <div class="time">10:53:30 AM</div>
-      </div>
-      <div class="city">
+      <div class="city" id="new-york">
         <h2>New York</h2>
         <div class="date">February 26th 2024</div>
-        <div class="time">1:53:30 PM</div>
+        <div class="time">10:53:30 <small>AM</small></div>
       </div>
-      <div class="city">
-        <h2>Las Vegas</h2>
+      <div class="city" id="london">
+        <h2>London</h2>
         <div class="date">February 26th 2024</div>
-        <div class="time">10:53:30 AM</div>
+        <div class="time">1:53:30 <small>PM</small></div>
+      </div>
+      <div class="city" id="tokyo">
+        <h2>Tokyo</h2>
+        <div class="date">February 26th 2024</div>
+        <div class="time">10:53:30 <small>AM</small></div>
       </div>
       </div>
       </div>
