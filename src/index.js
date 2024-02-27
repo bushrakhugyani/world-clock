@@ -1,19 +1,3 @@
-//Los Angeles
-/*let losAngelesElement = document.querySelector("#los-angeles");
-let losAngelesDateElement = losAngelesElement.querySelector(".date");
-let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-let losAngelesDateTime = moment().tz("America/Los_Angeles");
-losAngelesDateElement.innerHTML = losAngelesDateTime.format("MMMM Do YYYY");
-losAngelesTimeElement.innerHTML = losAngelesDateTime.format("h:mm:ss A");
-
-let losAngelesElement = document.querySelector("#los-angeles");
-let losAngelesDateElement = losAngelesElement.querySelector(".date");
-let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-let losAngelesDateTime = moment().tz("America/Los_Angeles");
-losAngelesDateElement.innerHTML = losAngelesDateTime.format("MMMM Do YYYY");
-losAngelesTimeElement.innerHTML = losAngelesDateTime.format(
-  "h:mm:ss [<small>A</small>]"
-);*/
 // Function to update the clocks for different cities
 function updateClocks(cityId) {
   // Object mapping city IDs to their respective time zones
